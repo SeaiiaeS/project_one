@@ -1,9 +1,25 @@
 .sidenav {
   &__list {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     list-style: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 70px;
+      right: -15px;
+      display: block;
+      width: 20px;
+      height: 30px;
+      background-color: #222;
+      background-image: url("../../assets/svg's/chevron-right.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 0 5px 5px 0;
+    }
   }
 
   &__itemWrapper {

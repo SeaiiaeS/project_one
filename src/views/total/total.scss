@@ -1,0 +1,9 @@
+.total {
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: 1200px) {
+    gap: 20px;
+    flex-direction: column;
+  }
+}

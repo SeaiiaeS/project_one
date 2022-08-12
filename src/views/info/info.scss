@@ -1,0 +1,68 @@
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+
+  &__container {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/svg's/check-back.svg");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center 30px;
+    border-right: 1px solid #ebebeb;
+    
+
+    &--blue {
+      background-image: url("../../assets/svg's/graph-arrow-up-back.svg");
+    }
+
+    &--orange {
+      background-image: url("../../assets/svg's/money-bill-back.svg");
+    }
+
+    &--green {
+      background-image: url("../../assets/svg's/question-fill-back.svg");
+    }
+  }
+
+  &__count {
+    font-size: 74px;
+    font-weight: bold;
+    color: #00acac;
+
+    &--blue {
+      color:#1f7bb6
+    }
+
+    &--orange {
+      color:#fbcf71
+    }
+  }
+
+  &__textWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 17px;
+    height: 17px;
+    margin: 0 10px;
+  }
+
+  &__text {
+    font-size:23px;
+    color: #6e6e6e;
+    text-align: center;
+  }
+}

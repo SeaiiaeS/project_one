@@ -2,16 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .app {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  
+
+  &__sidenav {
+    position: fixed;
+    top: 0;
+    background-color: #2a2a2a;
+    height: 100vh;
+    z-index: 1;
+  }
 
   &__content {
-    flex: 1;
+    margin: 0 0 0 60px;
+    flex-grow: 1;
   }
 }

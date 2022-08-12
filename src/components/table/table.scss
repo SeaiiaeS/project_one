@@ -1,0 +1,58 @@
+.table {
+  border-right: 1px solid #e6e6e6;
+  flex-grow: 1;
+
+  &__header {
+    padding: 10px 20px;
+    background-color: #353535;
+  }
+
+  &__title {
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &__paramList{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      justify-content: space-around;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 10px;
+    }
+  }
+
+  &__itemList{
+      position: relative;
+      top: 25px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+  }
+
+  &__itemValue {
+    font-size: 16px;
+
+    @media (max-width: 480px) {
+      font-size: 10px;
+    }
+  }
+
+  &__itemImg {
+    width: 20px;
+    height: 20px;
+
+    @media (max-width: 480px) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

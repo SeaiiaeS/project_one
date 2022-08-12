@@ -1,0 +1,20 @@
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    padding: 0 100px;
+    background-color: #2a2a2a;
+    gap: 30px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 10px;
+  }
+}

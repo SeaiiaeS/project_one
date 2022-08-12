@@ -16,17 +16,17 @@ export default function SideNav() {
   return (
     <div className="sidenav">
       <ul className="sidenav__list">
-        <Icon src={bwin} alt="bwin" className="sidenav__item" modificator="--logo"/>
-        <Icon src={speedometer} alt="speedometer" className="sidenav__item" />
-        <Icon src={key} alt="key" className="sidenav__item" />
-        <Icon src={user} alt="user" className="sidenav__item" />
-        <Icon src={report} alt="report" className="sidenav__item" />
-        <Icon src={graph} alt="graph" className="sidenav__item" />
-        <Icon src={arrows} alt="arrows" className="sidenav__item" />
-        <Icon src={params} alt="params" className="sidenav__item" />
-        <Icon src={heart} alt="heart" className="sidenav__item" modificator="--disabled"/>
-        <Icon src={clock} alt="clock" className="sidenav__item" modificator="--disabled"/>
-        <Icon src={eye} alt="eye" className="sidenav__item" modificator="--disabled"/>
+        <Icon isListItem={true} src={bwin} alt="bwin" className="sidenav__item" modificator="--logo"/>
+        <Icon isListItem={true} src={speedometer} alt="speedometer" className="sidenav__item" />
+        <Icon isListItem={true} src={key} alt="key" className="sidenav__item" />
+        <Icon isListItem={true} src={user} alt="user" className="sidenav__item" />
+        <Icon isListItem={true} src={report} alt="report" className="sidenav__item" />
+        <Icon isListItem={true} src={graph} alt="graph" className="sidenav__item" />
+        <Icon isListItem={true} src={arrows} alt="arrows" className="sidenav__item" />
+        <Icon isListItem={true} src={params} alt="params" className="sidenav__item" />
+        <Icon isListItem={true} src={heart} alt="heart" className="sidenav__item" modificator="--disabled"/>
+        <Icon isListItem={true} src={clock} alt="clock" className="sidenav__item" modificator="--disabled"/>
+        <Icon isListItem={true} src={eye} alt="eye" className="sidenav__item" modificator="--disabled"/>
         <li className="sidenav__text">#171717</li>
       </ul>
     </div>

@@ -1,35 +1,36 @@
-import "./sidenav.scss"
+import "./header.scss"
 import Icon from "@/components/icon";
-import bwin from "@/assets/images/bwin.png";
-import speedometer from "@/assets/svg's/speedometer.svg";
-import key from "@/assets/svg's/key.svg";
-import user from "@/assets/svg's/user.svg";
-import report from "@/assets/svg's/report.svg";
-import graph from "@/assets/svg's/graph.svg";
-import arrows from "@/assets/svg's/arrows.svg";
-import params from "@/assets/svg's/params.svg";
+import alignLeft from "@/assets/svg's/align-left.svg";
+import britain from "@/assets/svg's/britain.svg";
+import caretDown from "@/assets/svg's/caret-down.svg";
 import heart from "@/assets/svg's/heart.svg";
-import clock from "@/assets/svg's/clock.svg";
-import eye from "@/assets/svg's/eye.svg";
+import user from "@/assets/images/user.png";
 
-export default function SideNav() {
+export default function Header() {
   return (
-    <div className="sidenav">
-      <ul className="sidenav__list">
-        <Icon src={bwin} alt="bwin" className="sidenav__item" modificator="--logo"/>
-        <Icon src={speedometer} alt="speedometer" className="sidenav__item" />
-        <Icon src={key} alt="key" className="sidenav__item" />
-        <Icon src={user} alt="user" className="sidenav__item" />
-        <Icon src={report} alt="report" className="sidenav__item" />
-        <Icon src={graph} alt="graph" className="sidenav__item" />
-        <Icon src={arrows} alt="arrows" className="sidenav__item" />
-        <Icon src={params} alt="params" className="sidenav__item" />
-        <Icon src={heart} alt="heart" className="sidenav__item" modificator="--disabled"/>
-        <Icon src={clock} alt="clock" className="sidenav__item" modificator="--disabled"/>
-        <Icon src={eye} alt="eye" className="sidenav__item" modificator="--disabled"/>
-        <li className="sidenav__text">#171717</li>
-      </ul>
+    <div className="header">
+      <div className="header__content">
+        <Icon src={alignLeft} alt="align" className="header__icon"/>
+        <div className="header__languageWrapper">
+          <img className="header__languageImage" src={britain} alt="britain"/>
+          <span className="header__language">EN</span>
+        </div>
+        <div className="header__userWrapper">
+          <img className="header__userImage" src={user} alt="user"/>
+          <div className="header__userInfo">
+            <p className="header__userHello">Hello, Max!</p>
+            <p className="header__lastLogin">Last login: Thu Mar 20 2014</p>
+          </div>
+          <Icon src={caretDown} alt="caretDown" className="header__userIcon"/>
+        </div>
+      </div>
+      <div className="header__favoritesWrapper">
+        <p className="header__text">Dashboard</p>
+        <div className="header__favorites">
+          <Icon src={heart} alt="heart" className="header__heart"/>
+          <span className="header__add">ADD THIS PAGE TO FAVORITES</span>
+        </div>
+      </div>
     </div>
-    
   )
 }
